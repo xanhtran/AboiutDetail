@@ -1,0 +1,1159 @@
+/*******************************/
+/********* General CSS *********/
+/*******************************/
+body {
+    color: #757575;
+    background: #ffffff;
+    font-family: 'open sans', sans-serif;
+}
+
+h1,
+h2, 
+h3, 
+h4,
+h5, 
+h6 {
+    color: #454545;
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: #fbaf32;
+    transition: .3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #719a0a;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn.custom-btn {
+    padding: 12px 25px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #fbaf32;
+    border: 2px solid #fbaf32;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.btn.custom-btn:hover {
+    color: #fbaf32;
+    background: transparent;
+}
+
+.btn.custom-btn:focus,
+.form-control:focus,
+.custom-select:focus {
+    box-shadow: none;
+}
+
+.container-fluid {
+    max-width: 1366px;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #3498db;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 22px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 5px;
+    transition: background 0.5s;
+    z-index: 9;
+}
+
+.back-to-top i {
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+.back-to-top:hover {
+    background: #fbaf32;
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+    font-size: inherit;
+    margin-left: 0;
+}
+/**********************************/
+/*********** Nav Bar CSS **********/
+/**********************************/
+.navbar {
+    position: relative;
+    transition: .5s;
+    z-index: 999;
+}
+
+.navbar.nav-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+.navbar .navbar-brand {
+    margin: 0;
+    color: white;
+    font-size: 45px;
+    line-height: 0px;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    transition: .5s;
+    
+}
+
+.navbar .navbar-brand span {
+    color: #3498db;
+}
+
+.navbar .navbar-brand:hover {
+    color: #fbaf32;
+}
+
+.navbar .navbar-brand:hover span {
+    color: #fbaf32;
+}
+
+.navbar .navbar-brand img {
+    max-width: 100%;
+    max-height: 40px;
+}
+@media (min-width: 992px) {
+    .navbar {
+        position: absolute;
+        width: 100%;
+        padding: 30px 60px;
+        background: transparent !important;
+        z-index: 9;
+    }
+    
+    .navbar.nav-sticky {
+        padding: 10px 60px;
+        background: #ffffff !important;
+    }
+    
+    .navbar .navbar-brand {
+        color: black;
+    }
+    
+    .navbar.nav-sticky .navbar-brand {
+        color: black;
+    }
+
+    .navbar-light .navbar-nav .nav-link,
+    .navbar-light .navbar-nav .nav-link:focus {
+        padding: 10px 10px 8px 10px;
+        font-family: 'Nunito', sans-serif;
+        color: black;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .navbar-light.nav-sticky .navbar-nav .nav-link,
+    .navbar-light.nav-sticky .navbar-nav .nav-link:focus {
+        color: #666666;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar-light .navbar-nav .nav-link.active {
+        color: black;
+    }
+    
+    .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
+    .navbar-light.nav-sticky .navbar-nav .nav-link.active {
+        color: black;
+    }
+}
+
+@media (max-width: 991.98px) {   
+    .navbar {
+        padding: 15px;
+        background: #ffffff !important;
+    }
+    
+    .navbar .navbar-brand {
+        color: #fbaf32;
+    }
+    
+    .navbar .navbar-nav {
+        margin-top: 15px;
+    }
+    
+    .navbar a.nav-link {
+        padding: 5px;
+    }
+    
+    .navbar .dropdown-ab-activity {
+        box-shadow: none;
+    }
+}
+
+section {
+    padding: 100px 0;
+    overflow: hidden;
+  }
+/*******************************/
+/******* Page Header CSS *******/
+/*******************************/
+.page-header {
+    position: relative;
+    margin-bottom: 45px;
+    padding: 150px 0 90px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/page-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-header h2 {
+    position: relative;
+    color: #fbaf32;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.page-header a {
+    position: relative;
+    padding: 0 12px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.page-header a:hover {
+    color: #ffffff;
+}
+
+.page-header a::after {
+    position: absolute;
+    content: "/";
+    width: 8px;
+    height: 8px;
+    top: -1px;
+    right: -7px;
+    text-align: center;
+    color: #fbaf32;
+}
+
+.page-header a:last-child::after {
+    display: none;
+}
+
+@media (max-width: 767.98px) {
+    .page-header h2 {
+        font-size: 35px;
+    }
+    
+    .page-header a {
+        font-size: 18px;
+    }
+}
+
+
+/*******************************/
+/******* Section Header ********/
+/*******************************/
+.section-header {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.section-header p {
+    color: #fbaf32;
+    margin-bottom: 5px;
+    position: relative;
+    font-size: 20px;
+}
+
+.section-header h2 {
+    margin: 0;
+    position: relative;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+@media (max-width: 991.98px) {
+    .section-header h2 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .section-header h2 {
+        font-size: 35px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .section-header h2 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
+/*******************************/
+/********* ab-mission CSS *********/
+/*******************************/
+.ab-mission {
+    position: relative;
+    width: 100%;
+    padding: 90px 0 60px 0;
+    background: rgba(0, 0, 0, .04);
+}
+
+.ab-mission .section-header {
+    margin-bottom: 30px;
+}
+
+.ab-mission .ab-mission-text {
+    position: relative;
+    width: 100%;
+}
+.ab-mission .ab-mission-img {
+    border-radius: 15px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+.ab-mission .ab-mission-img .col-6,
+.ab-mission .ab-mission-img .col-12 {
+    padding: 0;
+    overflow: hidden;
+}
+.ab-mission .ab-mission-img img {
+    width: 100%;
+    transition: .3s;
+}
+.ab-mission .ab-mission-img img:hover {
+    transform: scale(1.1);
+}
+
+.ab-mission .ab-mission-text .btn {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 45px;
+}
+.ab-mission .ab-mission-item {
+    width: 100%;
+    display: flex;
+   align-items: center;
+}
+.ab-mission .ab-mission-body {
+    margin-bottom: 35px;   
+}
+.ab-mission .ab-mission-item a {
+    
+    display: inline-block;
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3498db;
+    border-radius: 35px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+
+
+.ab-mission .ab-mission-item h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+/*******************************/
+/********** Goal CSS ***********/
+/*******************************/
+
+.ab-goal{
+    
+    position: relative;
+    width: 100%;
+    
+}
+.ab-goal-holder {
+	margin:0 auto;
+	padding:0;
+	padding-top:20px;
+	width:100%;
+	position:relative;
+	overflow:hidden;
+	list-style:none
+}
+.ab-goal-holder:before {
+	background:#e4e4e4;
+	content:"";
+	left:50%;
+	top:20px;
+	bottom:0;
+	position:absolute;
+	width:1px;
+	margin-left:-1px;
+	height:9999px
+}
+ul .ab-goal-holder>li {
+	width:100%;
+	float:left;
+	display:inline-block
+}
+.ab-goal-content {
+	width:571px;
+}
+.ab-goal-content a 
+    {
+        color:inherit;font-weight: 700;
+    }
+.ab-goal-txt{
+	position:relative;
+	padding:20px;
+	background:#fff;
+	border:1px solid #e4e4e4;
+	margin-top:-20px
+}
+.ab-goal-txt h3 {
+	text-transform:uppercase;
+	font-size:17px;
+	margin-top:10px;
+	margin-bottom:10px;
+	color: #333;
+}
+.ab-goal-holder li:nth-child(odd) .ab-goal-txt h3 {
+	text-align:left;
+	margin-right:0
+}
+.ab-goal-txt.meta {
+	color:#999
+}
+.ab-goal-holder li:nth-child(odd) .ab-goal-content:hover .ab-goal-date,.tline-item-right .ab-goal-content:hover .ab-goal-date {
+	-webkit-animation:pulse .3s;
+	animation:pulse .3s
+}
+.ab-goal-holder li:nth-child(odd) {
+	float:left;
+	position:relative
+}
+.ab-goal-holder li:nth-child(odd) .ab-goal-content {
+	float:left
+}
+.ab-goal-holder li:nth-child(odd) .ab-goal-txt{
+	margin-right:60px
+}
+.ab-goal-holder li:nth-child(odd) .ab-goal-date {
+	margin-right:-5px;
+	float:right;
+	background-color: #3498db;
+	color:#fff
+}
+.ab-goal-holder li {
+	float:right;
+	position:relative;
+	max-width:100%;
+}
+.ab-goal-holder li:nth-child(even) .ab-goal-content {
+	float:right;
+	text-align:right;
+}
+.ab-goal-holder li:nth-child(even) .ab-goal-txt{
+	margin-left:60px;
+	text-align:right;
+}
+.ab-goal-holder li:nth-child(even) .ab-goal-date {
+	margin-left:-5px;
+	float:left
+}
+.ab-goal-txt:before,.ab-goal-txt:after {
+	content:" ";
+	position:absolute;
+	top:24px;
+	display:block;
+	width:0;
+	height:0;
+	border-top:solid 15px transparent;
+	border-bottom:solid 15px transparent
+}
+.ab-goal-holder li:nth-child(odd) .ab-goal-txt:before,.ab-goal-holder li:nth-child(odd) .ab-goal-txt:after {
+	right:-18px;
+	border-left:solid 20px #fff
+}
+.ab-goal-holder li:nth-child(odd) .ab-goal-txt:before {
+	right:-20px;
+	border-left-color:#e4e4e4
+}
+.ab-goal-holder li:nth-child(even) .ab-goal-txt:before,.ab-goal-holder li:nth-child(even) .ab-goal-txt:after {
+	left:-18px;
+	border-right:solid 20px #fff
+}
+.ab-goal-holder li:nth-child(even) .ab-goal-txt:before {
+	left:-20px;
+	border-right-color:#e4e4e4
+}
+.ab-goal-date {
+	text-align:center;
+	padding-top:12px;
+	width:40px;
+	height:40px;
+	background-color:#fbaf32;
+	border-radius:100%;
+	-moz-border-radius:100%;
+	-webkit-border-radius:100%;
+	color:#fff
+}
+.ab-goal-start {
+	width:100% !Important;
+	float:left;
+	padding:0;
+	position:absolute;
+	bottom:0;
+}
+.ab-goal-start-content {
+	text-align:center;
+}
+.ab-goal-start .ab-goal-start-icon {
+	margin:0 auto;
+	margin-bottom:20px;
+	width:12px;
+	height:12px;
+	border-radius:100%;
+	-moz-border-radius:100%;
+	-webkit-border-radius:100%;
+	background-color:#ccc;
+}
+
+.ab-goal-headline h1,.ab-goal-headline h3 {
+	font-weight:100;
+}
+.ab-goal-headline h1  {
+	letter-spacing:1px;
+	font-size:32px;
+}
+.ab-goal-headline h3 {
+	font-size:19px;
+	line-height: 1.6;
+	font-weight:300;
+	letter-spacing:1px;
+}
+
+/*******************************/
+/********** Staff CSS ***********/
+/*******************************/
+
+.nhanvien {
+    position: relative;
+    padding: 105px 0;
+    
+    background-color: #3498db;
+}
+.nhanvien h1{
+    color: white;
+    font-size: 3rem;
+}
+
+  .ab-exboard h1{
+    margin: 0 0 70px 20px;
+  }
+  
+  .ab-exboard-content {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  
+  .ab-exboard-description {
+    font-size: 0.9rem;
+    color: 	#AAAAAA;
+    
+    
+  }
+ 
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+    .ab-exboard-content {
+      max-width: 560px;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .ab-exboard-content,
+    .tm-section,
+    .tm-container-inner,
+    .tm-container-inner-2 {
+      max-width: 840px;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .ab-exboard-content,
+    .tm-section {
+      max-width: 1120px;
+    }
+    
+    .tm-container-inner {
+      max-width: 1120px;
+    }
+    
+    .tm-container-inner-2 {
+      max-width: 900px;
+    }
+  }
+  .ab-exboard-item {
+    max-width: 280px;
+  }
+  
+  .ab-exboard-img {
+    margin-bottom: 20px;
+    height: 250px;
+  }
+  
+  .ab-exboard-title {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #1A6692; 
+  }
+  .ab-exboard-image img{
+    position: relative;
+    width: 100%;
+    transition: .3s;
+    height: 250px;
+  }
+  .ab-exboard-link {
+    color: #abacad;
+    display: inline-block;
+    border-radius: 1px;
+    background-color: transparent;
+    font-size: 1.0rem;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+  
+  .ab-exboard-link:hover {
+    color: white;
+    background-color: #fbaf32;
+  }
+  
+  .ab-exboard-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+/*******************************/
+/********** Value CSS ***********/
+/*******************************/
+.ab-value {
+    position: relative;
+    width: 100%;
+    padding: 90px 0 60px 0;
+    background: rgba(0, 0, 0, .04);
+   
+    
+}
+
+.ab-value .ab-value-item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 50px 30px 30px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+    transition: .3s;
+}
+
+.ab-value .ab-value-item:hover {
+    box-shadow: none;
+}
+
+.ab-value .ab-value-item i {
+    position: relative;
+    display: inline-block;
+    color: #3498db;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+
+.ab-value .ab-value-item:hover i {
+    color: #fbaf32;
+}
+
+.ab-value .ab-value-item i::after {
+    position: absolute;
+    content: "";
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    top: -20px;
+    left: -15px;
+    border: 3px dotted #3498db;
+    border-right: transparent;
+    border-bottom: transparent;
+    border-radius: 100px;
+    transition: .3s;
+}
+
+.ab-value .ab-value-item:hover i::after {
+    border: 3px dotted #fbaf32;
+    border-right: transparent;
+    border-bottom: transparent;
+}
+
+.ab-value .ab-value-item h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.ab-value .ab-value-item a {
+    position: relative;
+    font-size: 16px;
+}
+.ab-value .ab-value-item .ab-value-image {
+   
+    width: 300px;
+    height: 100px;
+}
+
+.ab-value .ab-value_a{
+    justify-content: center;
+}
+
+
+
+
+
+
+
+/*******************************/
+/*********** Activity CSS **********/
+/*******************************/
+.ab-activity {
+    position: relative;
+    width: 100%;
+    padding: 90px 0 60px 0;
+    
+}
+
+.ab-activity .ab-activity-tab {
+    position: relative;
+}
+
+
+.ab-activity .ab-activity-tab img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.ab-activity .ab-activity-tab .nav.nav-pills .nav-link {
+    color: #ffffff;
+    background: #3498db;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.ab-activity .ab-activity-tab .nav.nav-pills .nav-link:hover,
+.ab-activity .ab-activity-tab .nav.nav-pills .nav-link.active {
+    color: #ffffff;
+    background: #fbaf32;
+}
+
+.ab-activity .ab-activity-tab .tab-content {
+    padding: 30px 0 0 0;
+    background: transparent;
+}
+
+.ab-activity .ab-activity-tab .tab-content .container {
+    padding: 0;
+}
+
+
+/*******************************/
+/*******Staff CSS *******/
+/*******************************/
+.ab-staff {
+    position: relative;
+    padding: 45px 0;
+    
+}
+
+
+.ab-staff .ab-staff-related {
+    margin-bottom: 45px;
+    
+}
+
+.ab-staff .ab-staff-related h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    
+}
+
+.ab-staff .related-slider {
+    position: relative;
+    margin: 0 -15px;
+    width: calc(100% + 30px);
+    border: 1px solid black;
+}
+
+.ab-staff .related-slider .post-item {
+    margin: 0 15px;
+}
+
+.ab-staff .post-item {
+    position: relative;
+    margin-bottom: 30px;
+    background: #ffffff;
+    border: 1px solid black;
+    width: 300px;
+}
+.ab-staff .post-img {
+    position: relative;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+
+.ab-staff .post-img img {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    height: 250px;
+    transition: .3s;
+}
+
+.ab-staff .post-item:hover img {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.ab-staff  .post-social {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: .3s;
+}
+
+.ab-staff  .post-social a {
+    position: relative;
+    margin: 0 3px;
+    margin-top: 100px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #ffffff;
+    background: #3498db;
+    opacity: 0;
+}
+
+.ab-staff  .post-social a:hover {
+    color: #ffffff;
+    background: #fbaf32;
+}
+
+.ab-staff  .post-item:hover .post-social {
+    background: rgba(256, 256, 256, .5);
+}
+
+.ab-staff  .post-item:hover .post-social a:first-child {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s 0s;
+}
+
+.ab-staff  .post-item:hover .post-social a:nth-child(2) {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s .1s;
+}
+
+.ab-staff  .post-item:hover .post-social a:nth-child(3) {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s .2s;
+}
+
+.ab-staff  .post-item:hover .post-social a:nth-child(4) {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s .3s;
+}
+
+.ab-staff  .post-text {
+    position: relative;
+    padding: 25px 15px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, .07);
+    border-top: none;
+    border-radius: 0 0 15px 15px;
+}
+
+.ab-staff  .post-text h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.ab-staff .post-text p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+
+.ab-staff .related-slider .owl-nav {
+    position: absolute;
+    width: 90px;
+    top: -55px;
+    right: 15px;
+    display: flex;
+}
+
+.ab-staff .related-slider .owl-nav .owl-prev,
+.ab-staff .related-slider .owl-nav .owl-next {
+    margin-left: 15px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background: #fbaf32;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.ab-staff .related-slider .owl-nav .owl-prev:hover,
+.ab-staff .related-slider .owl-nav .owl-next:hover {
+    color: #ffffff;
+    background: #719a0a;
+}
+
+.ab-staff .ab-staff-comment {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.ab-staff .ab-staff-comment h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.ab-staff .comment-list {
+    list-style: none;
+    padding: 0;
+}
+
+.ab-staff .comment-child {
+    list-style: none;
+}
+
+.ab-staff .comment-body {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.ab-staff .comment-img {
+    width: 60px;
+}
+
+.ab-staff .comment-img img {
+    width: 100%;
+    border-radius: 100px;
+}
+
+.ab-staff .comment-text {
+    padding-left: 15px;
+    width: calc(100% - 60px);
+}
+
+.ab-staff .comment-text h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.ab-staff .comment-text span {
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.ab-staff .comment-text .btn {
+    padding: 3px 10px;
+    font-size: 14px;
+    color: #454545;
+    background: #dddddd;
+    border-radius: 5px;
+}
+
+.ab-staff .comment-text .btn:hover {
+    background: #fbaf32;
+}
+
+.ab-staff .comment-form {
+    position: relative;
+}
+
+.ab-staff .comment-form h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.ab-staff .comment-form form {
+    padding: 30px;
+    background: #f3f6ff;
+}
+
+.ab-staff .comment-form form .form-group:last-child {
+    margin: 0;
+}
+
+.ab-staff .comment-form input,
+.ab-staff .comment-form textarea {
+    border-radius: 5px;
+}
+/**********************************/
+/*********** Report CSS **********/
+/**********************************/
+.ab-report {
+    padding: 70px 0 60px;
+  }
+  
+  .ab-report .ab-report-box {
+    padding: 30px 30px 25px 30px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background: #f1f6fe;
+  }
+  
+  .ab-report .ab-report-box i {
+    position: absolute;
+    top: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    background: #106eea;
+    color: #fff;
+    width: 56px;
+    height: 56px;
+    line-height: 0;
+    border-radius: 50px;
+    border: 5px solid #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ab-report .ab-report-box span {
+    font-size: 36px;
+    display: block;
+    font-weight: 600;
+    color: #062b5b;
+  }
+  
+  .ab-report .ab-report-box p {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+  }
+
+/*--------------------------------------------------------------
+# ab-report CSS
+--------------------------------------------------------------*/
+.ab-report .ab-report-content{
+    margin-top: 90px;
+}
+.ab-report .ab-report-progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+  }
+  
+  .ab-report .ab-report-progress .ab-report-skill {
+    padding: 0;
+    margin: 0 0 6px 0;
+    
+    display: block;
+    font-weight: none;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    color: #222222;
+  }
+  
+  .ab-report .ab-report-progress .ab-report-skill .val {
+    float: right;
+    font-style: normal;
+  }
+  
+  .ab-report .ab-report-progress-bar-wrap {
+    background: #e2eefd;
+    height: 20px;
+  }
+  
+  .ab-report .ab-report-progress-bar {
+    width: 1px;
+    height: 20px;
+    transition: .9s;
+    font-size: 16px;
+    background-color: #106eea;
+    color: white;
+    text-align: center;
+  }
+ /**********************************/
+/*********** Finance CSS **********/
+/**********************************/
+
+.ab-finance{
+    position: relative;
+    width: 100%;
+    padding: 90px 0 60px 0;
+    background: rgba(0, 0, 0, .04);
+}
+.ab-finance .de-ab-finance{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
