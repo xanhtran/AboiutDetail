@@ -203,9 +203,12 @@ a:focus {
 }
 
 section {
-    padding: 100px 0;
+    padding: 70px 0 0 0;
     overflow: hidden;
+   
   }
+
+ 
 /*******************************/
 /******* Page Header CSS *******/
 /*******************************/
@@ -263,6 +266,9 @@ section {
         font-size: 18px;
     }
 }
+/*******************************/
+/******* Slider Css ********/
+/*******************************/
 
 
 /*******************************/
@@ -308,55 +314,67 @@ section {
     }
 }
 /*******************************/
-/********* ab-mission CSS *********/
+/********* ab-detail CSS *********/
 /*******************************/
-.ab-mission {
-    position: relative;
+.carousel-inner img {
     width: 100%;
-    padding: 90px 0 60px 0;
-    background: rgba(0, 0, 0, .04);
+    height: 100%;
+  }
+
+
+
+.ab-subtitle h5{
+    font-size: 17px;
+    font-weight: none;
 }
 
-.ab-mission .section-header {
+.ab-detail {
+    position: relative;
+    width: 100%;
+    padding: 40px 0 20px 0;
+
+}
+
+.ab-detail .section-header {
     margin-bottom: 30px;
 }
 
-.ab-mission .ab-mission-text {
+.ab-detail .ab-detail-text {
     position: relative;
     width: 100%;
 }
-.ab-mission .ab-mission-img {
+.ab-detail .ab-detail-img {
     border-radius: 15px;
     margin-bottom: 25px;
     overflow: hidden;
 }
-.ab-mission .ab-mission-img .col-6,
-.ab-mission .ab-mission-img .col-12 {
+.ab-detail .ab-detail-img .col-6,
+.ab-detail .ab-detail-img .col-12 {
     padding: 0;
     overflow: hidden;
 }
-.ab-mission .ab-mission-img img {
+.ab-detail .ab-detail-img img {
     width: 100%;
     transition: .3s;
 }
-.ab-mission .ab-mission-img img:hover {
+.ab-detail .ab-detail-img img:hover {
     transform: scale(1.1);
 }
 
-.ab-mission .ab-mission-text .btn {
+.ab-detail .ab-detail-text .btn {
     width: 100%;
     margin-top: 15px;
     margin-bottom: 45px;
 }
-.ab-mission .ab-mission-item {
+.ab-detail .ab-detail-item {
     width: 100%;
     display: flex;
    align-items: center;
 }
-.ab-mission .ab-mission-body {
+.ab-detail .ab-detail-body {
     margin-bottom: 35px;   
 }
-.ab-mission .ab-mission-item a {
+.ab-detail .ab-detail-item a {
     
     display: inline-block;
     margin-right: 5px;
@@ -370,187 +388,10 @@ section {
     font-size: 16px;
     color: #ffffff;
 }
-
-
-
-.ab-mission .ab-mission-item h3 {
+.ab-detail .ab-detail-item h3 {
     font-size: 22px;
     font-weight: 700;
 }
-
-
-/*******************************/
-/********** Goal CSS ***********/
-/*******************************/
-
-.ab-goal{
-    
-    position: relative;
-    width: 100%;
-    
-}
-.ab-goal-holder {
-	margin:0 auto;
-	padding:0;
-	padding-top:20px;
-	width:100%;
-	position:relative;
-	overflow:hidden;
-	list-style:none
-}
-.ab-goal-holder:before {
-	background:#e4e4e4;
-	content:"";
-	left:50%;
-	top:20px;
-	bottom:0;
-	position:absolute;
-	width:1px;
-	margin-left:-1px;
-	height:9999px
-}
-ul .ab-goal-holder>li {
-	width:100%;
-	float:left;
-	display:inline-block
-}
-.ab-goal-content {
-	width:571px;
-}
-.ab-goal-content a 
-    {
-        color:inherit;font-weight: 700;
-    }
-.ab-goal-txt{
-	position:relative;
-	padding:20px;
-	background:#fff;
-	border:1px solid #e4e4e4;
-	margin-top:-20px
-}
-.ab-goal-txt h3 {
-	text-transform:uppercase;
-	font-size:17px;
-	margin-top:10px;
-	margin-bottom:10px;
-	color: #333;
-}
-.ab-goal-holder li:nth-child(odd) .ab-goal-txt h3 {
-	text-align:left;
-	margin-right:0
-}
-.ab-goal-txt.meta {
-	color:#999
-}
-.ab-goal-holder li:nth-child(odd) .ab-goal-content:hover .ab-goal-date,.tline-item-right .ab-goal-content:hover .ab-goal-date {
-	-webkit-animation:pulse .3s;
-	animation:pulse .3s
-}
-.ab-goal-holder li:nth-child(odd) {
-	float:left;
-	position:relative
-}
-.ab-goal-holder li:nth-child(odd) .ab-goal-content {
-	float:left
-}
-.ab-goal-holder li:nth-child(odd) .ab-goal-txt{
-	margin-right:60px
-}
-.ab-goal-holder li:nth-child(odd) .ab-goal-date {
-	margin-right:-5px;
-	float:right;
-	background-color: #3498db;
-	color:#fff
-}
-.ab-goal-holder li {
-	float:right;
-	position:relative;
-	max-width:100%;
-}
-.ab-goal-holder li:nth-child(even) .ab-goal-content {
-	float:right;
-	text-align:right;
-}
-.ab-goal-holder li:nth-child(even) .ab-goal-txt{
-	margin-left:60px;
-	text-align:right;
-}
-.ab-goal-holder li:nth-child(even) .ab-goal-date {
-	margin-left:-5px;
-	float:left
-}
-.ab-goal-txt:before,.ab-goal-txt:after {
-	content:" ";
-	position:absolute;
-	top:24px;
-	display:block;
-	width:0;
-	height:0;
-	border-top:solid 15px transparent;
-	border-bottom:solid 15px transparent
-}
-.ab-goal-holder li:nth-child(odd) .ab-goal-txt:before,.ab-goal-holder li:nth-child(odd) .ab-goal-txt:after {
-	right:-18px;
-	border-left:solid 20px #fff
-}
-.ab-goal-holder li:nth-child(odd) .ab-goal-txt:before {
-	right:-20px;
-	border-left-color:#e4e4e4
-}
-.ab-goal-holder li:nth-child(even) .ab-goal-txt:before,.ab-goal-holder li:nth-child(even) .ab-goal-txt:after {
-	left:-18px;
-	border-right:solid 20px #fff
-}
-.ab-goal-holder li:nth-child(even) .ab-goal-txt:before {
-	left:-20px;
-	border-right-color:#e4e4e4
-}
-.ab-goal-date {
-	text-align:center;
-	padding-top:12px;
-	width:40px;
-	height:40px;
-	background-color:#fbaf32;
-	border-radius:100%;
-	-moz-border-radius:100%;
-	-webkit-border-radius:100%;
-	color:#fff
-}
-.ab-goal-start {
-	width:100% !Important;
-	float:left;
-	padding:0;
-	position:absolute;
-	bottom:0;
-}
-.ab-goal-start-content {
-	text-align:center;
-}
-.ab-goal-start .ab-goal-start-icon {
-	margin:0 auto;
-	margin-bottom:20px;
-	width:12px;
-	height:12px;
-	border-radius:100%;
-	-moz-border-radius:100%;
-	-webkit-border-radius:100%;
-	background-color:#ccc;
-}
-
-.ab-goal-headline h1,.ab-goal-headline h3 {
-	font-weight:100;
-}
-.ab-goal-headline h1  {
-	letter-spacing:1px;
-	font-size:32px;
-}
-.ab-goal-headline h3 {
-	font-size:19px;
-	line-height: 1.6;
-	font-weight:300;
-	letter-spacing:1px;
-}
-
 /*******************************/
 /********** Staff CSS ***********/
 /*******************************/
@@ -670,10 +511,9 @@ ul .ab-goal-holder>li {
 .ab-value {
     position: relative;
     width: 100%;
-    padding: 90px 0 60px 0;
+    padding: 40px 0 20px 0;
     background: rgba(0, 0, 0, .04);
    
-    
 }
 
 .ab-value .ab-value-item {
@@ -751,47 +591,6 @@ ul .ab-goal-holder>li {
 
 
 
-/*******************************/
-/*********** Activity CSS **********/
-/*******************************/
-.ab-activity {
-    position: relative;
-    width: 100%;
-    padding: 90px 0 60px 0;
-    
-}
-
-.ab-activity .ab-activity-tab {
-    position: relative;
-}
-
-
-.ab-activity .ab-activity-tab img {
-    max-width: 100%;
-    border-radius: 15px;
-}
-
-.ab-activity .ab-activity-tab .nav.nav-pills .nav-link {
-    color: #ffffff;
-    background: #3498db;
-    border-radius: 5px;
-    margin: 0 5px;
-}
-
-.ab-activity .ab-activity-tab .nav.nav-pills .nav-link:hover,
-.ab-activity .ab-activity-tab .nav.nav-pills .nav-link.active {
-    color: #ffffff;
-    background: #fbaf32;
-}
-
-.ab-activity .ab-activity-tab .tab-content {
-    padding: 30px 0 0 0;
-    background: transparent;
-}
-
-.ab-activity .ab-activity-tab .tab-content .container {
-    padding: 0;
-}
 
 
 /*******************************/
@@ -1055,7 +854,7 @@ ul .ab-goal-holder>li {
 /*********** Report CSS **********/
 /**********************************/
 .ab-report {
-    padding: 70px 0 60px;
+    padding: 40px 0 20px;
   }
   
   .ab-report .ab-report-box {
@@ -1150,6 +949,8 @@ ul .ab-goal-holder>li {
     width: 100%;
     padding: 90px 0 60px 0;
     background: rgba(0, 0, 0, .04);
+   
+    margin-top: 20px;
 }
 .ab-finance .de-ab-finance{
     font-size: 20px;
